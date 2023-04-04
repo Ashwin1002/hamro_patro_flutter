@@ -224,10 +224,13 @@ class SaitScreen extends StatelessWidget {
       onTap: onPressed,
       child: Column(
         children: [
-          Icon(
-            iconData,
-            color: Colors.amber,
-            size: 50,
+          Transform.scale(
+            scale: 0.9,
+            child: Icon(
+              iconData,
+              color: Colors.amber,
+              size: 50,
+            ),
           ),
           verticalSpace(),
           Text(

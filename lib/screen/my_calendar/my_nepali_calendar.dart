@@ -56,7 +56,7 @@ class _MyNepaliCalendarState extends State<MyNepaliCalendar>
 
   @override
   void dispose() {
-    state.dispose();
+    // state.dispose();
     tabController.dispose();
     super.dispose();
   }

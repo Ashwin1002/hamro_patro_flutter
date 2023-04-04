@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:hamro_patro/screen/home_page/home_page.dart';
 import 'package:hamro_patro/screen/my_calendar/calendar_controller.dart';
 import 'package:hamro_patro/screen/my_calendar/my_nepali_calendar.dart';
+import 'package:hamro_patro/utils/routes.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -24,7 +26,8 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           scaffoldBackgroundColor: Colors.black,
         ),
-        home: const MyNepaliCalendar(),
+        onGenerateRoute: AppRoutes.generateRoute,
+        initialRoute: homePage,
       ),
     );
   }
